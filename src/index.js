@@ -6,7 +6,7 @@ module.exports = function getZerosCount(number, base) {
   function findZeroes(number, length){
     let minSum = Infinity;
     for(let i = 0; i < length/2; i++){
-      let devider = devidersPows[i], pow = devidersPows[length/2 + i], sum = 0;
+      let devider = devidersPows[i], sum = 0;
       while(devider <= number){
         sum += Math.floor(number/devider);
         devider *= devidersPows[i];
